@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { sitePath } from '../utils/sitePaths.js'
 import { researchInterests } from '../data/portfolio.js'
 
 const industryProjects = [
@@ -103,7 +104,7 @@ function Research() {
               onKeyDown={(event) => activateIndustryProjectOnKey(event, industryProjects[0])}
             >
               <div className="technical-visual selected-research__visual selected-research__visual--single">
-                <img src="/images/photo11.png" alt="Robotic manipulator assembly." loading="lazy" decoding="async" />
+                <img src={sitePath('images/photo11.png')} alt="Robotic manipulator assembly." loading="lazy" decoding="async" />
               </div>
               <div className="selected-research__details">
                 <span className="project-card__category selected-research__category">{industryProjects[0].category}</span>
@@ -122,8 +123,8 @@ function Research() {
             >
               <div className="technical-visual selected-research__visual selected-research__visual--pair" role="group" aria-label="Seat comfort analysis images">
                 <div className="selected-research__image-pair">
-                  <img src="/images/photo12.png" alt="Finite element model of an occupant seated in a vehicle seat." loading="lazy" decoding="async" />
-                  <img src="/images/photo13.png" alt="Seat comfort analysis contour visualization." loading="lazy" decoding="async" />
+                  <img src={sitePath('images/photo12.png')} alt="Finite element model of an occupant seated in a vehicle seat." loading="lazy" decoding="async" />
+                  <img src={sitePath('images/photo13.png')} alt="Seat comfort analysis contour visualization." loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="selected-research__details">
@@ -197,10 +198,10 @@ function Research() {
         </div>
 
         <div className="childhood-creations__gallery" aria-label="Childhood creations photographs">
-          <img src="/images/photo1.jpg" alt="Handmade model airplane built from discarded materials at a school exhibition." loading="lazy" decoding="async" />
-          <img src="/images/photo2.jpg" alt="Childhood models displayed at an exhibition." loading="lazy" decoding="async" />
+          <img src={sitePath('images/photo1.jpg')} alt="Handmade model airplane built from discarded materials at a school exhibition." loading="lazy" decoding="async" />
+          <img src={sitePath('images/photo2.jpg')} alt="Childhood models displayed at an exhibition." loading="lazy" decoding="async" />
           <div className="childhood-creations__image-crop">
-            <img src="/images/photo3.JPG" alt="A child presents a robot to Ratan Tata at a school event." loading="lazy" decoding="async" />
+            <img src={sitePath('images/photo3.JPG')} alt="A child presents a robot to Ratan Tata at a school event." loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -223,9 +224,9 @@ function Research() {
         </div>
 
         <div className="childhood-creations__gallery childhood-creations__gallery--closing" aria-label="More childhood creations photographs">
-          <img src="/images/photo7.JPG" alt="A cardboard robot shakes hands with Ratan Tata at a school event." loading="lazy" decoding="async" />
-          <img src="/images/photo5.jpg" alt="Large cardboard robot displayed at a school exhibition." loading="lazy" decoding="async" />
-          <img src="/images/photo6.jpg" alt="Recycled creations displayed at a school exhibition." loading="lazy" decoding="async" />
+          <img src={sitePath('images/photo7.JPG')} alt="A cardboard robot shakes hands with Ratan Tata at a school event." loading="lazy" decoding="async" />
+          <img src={sitePath('images/photo5.jpg')} alt="Large cardboard robot displayed at a school exhibition." loading="lazy" decoding="async" />
+          <img src={sitePath('images/photo6.jpg')} alt="Recycled creations displayed at a school exhibition." loading="lazy" decoding="async" />
         </div>
       </section>
     </>

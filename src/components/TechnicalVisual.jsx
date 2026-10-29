@@ -1,4 +1,5 @@
 import { useId } from 'react'
+import { sitePath } from '../utils/sitePaths.js'
 
 function ManipulatorVisual({ titleId }) {
   return (
@@ -19,8 +20,8 @@ function ManipulatorVisual({ titleId }) {
 function LocomotionVisual() {
   return (
     <div className="technical-visual__image-pair">
-      <img src="/images/frames.png" alt="Coordinate-frame assignment for the six-link humanoid leg mechanism." loading="lazy" decoding="async" />
-      <img src="/images/humanoid-locomotion/figure-07-random-configuration-alternate.png" alt="Humanoid leg mechanism in an alternate random configuration." loading="lazy" decoding="async" />
+      <img src={sitePath('images/frames.png')} alt="Coordinate-frame assignment for the six-link humanoid leg mechanism." loading="lazy" decoding="async" />
+      <img src={sitePath('images/humanoid-locomotion/figure-07-random-configuration-alternate.png')} alt="Humanoid leg mechanism in an alternate random configuration." loading="lazy" decoding="async" />
     </div>
   )
 }
@@ -40,14 +41,14 @@ function BiomechanicsVisual({ titleId }) {
 }
 
 function EarOssiclesVisual() {
-  return <img src="/images/image4.png" alt="Finite-element mesh visualization of a middle-ear ossicle with a color-coded modal response." loading="lazy" decoding="async" />
+  return <img src={sitePath('images/image4.png')} alt="Finite-element mesh visualization of a middle-ear ossicle with a color-coded modal response." loading="lazy" decoding="async" />
 }
 
 function EngineVisual() {
   return (
     <div className="technical-visual__image-pair technical-visual__image-pair--engine">
-      <img src="/Photo20.png" alt="Efficiency comparison across combustion concepts." loading="lazy" decoding="async" />
-      <img src="/Photo22.png" alt="MATLAB model workflow for engine inputs and outputs." loading="lazy" decoding="async" />
+      <img src={sitePath('Photo20.png')} alt="Efficiency comparison across combustion concepts." loading="lazy" decoding="async" />
+      <img src={sitePath('Photo22.png')} alt="MATLAB model workflow for engine inputs and outputs." loading="lazy" decoding="async" />
     </div>
   )
 }

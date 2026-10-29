@@ -1,3 +1,5 @@
+import { sitePath } from '../utils/sitePaths.js'
+
 function SectionHeading({ number, id, children }) {
   return (
     <header className="combustion-detail__section-heading">
@@ -92,7 +94,7 @@ function LowTemperatureCombustionDetail() {
           <p>Exergy destruction is associated with irreversible processes such as combustion, heat transfer, friction, and mixing. Understanding these losses provides a thermodynamic basis for investigating improvements in engine efficiency.</p>
         </div>
         <ProjectPhoto
-          src="/Photo20.png"
+          src={sitePath('Photo20.png')}
           alt="Stacked energy distribution comparison for conventional diesel, low-temperature combustion, gas PPCI, and D-F PCCI at 9–11 bar IMEP."
           caption="Efficiency comparison"
         />
@@ -186,7 +188,7 @@ function LowTemperatureCombustionDetail() {
           <p>The pressure evolution is evaluated using the thermodynamic state, volume change, and heat-transfer calculations over successive crank-angle positions.</p>
         </div>
         <ProjectPhoto
-          src="/Photo21.png"
+          src={sitePath('Photo21.png')}
           alt="Cylinder schematic showing intake and exhaust valves, burned and unburned zones, heat transfer, and work."
           caption="2-Zone combustion model schematic"
         />
@@ -234,7 +236,7 @@ function LowTemperatureCombustionDetail() {
 
         <ProjectPhoto
           className="combustion-detail__photo--workflow"
-          src="/Photo22.png"
+          src={sitePath('Photo22.png')}
           alt="Flowchart of engine, geometry, fuel, and atmospheric inputs leading to model outputs."
           caption="MATLAB model workflow"
         />
@@ -262,13 +264,13 @@ function LowTemperatureCombustionDetail() {
         <div className="combustion-detail__results-figures">
           <ProjectPhoto
             className="combustion-detail__photo--paired"
-            src="/Photo23.png"
+            src={sitePath('Photo23.png')}
             alt="Pressure–volume variation graph for the modeled engine cycle."
             caption="Pressure-Volume Graph"
           />
           <ProjectPhoto
             className="combustion-detail__photo--paired"
-            src="/Photo24.png"
+            src={sitePath('Photo24.png')}
             alt="Pressure–crank-angle variation graph for the modeled engine cycle."
             caption="Pressure-Crank Angle Graph"
           />

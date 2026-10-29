@@ -11,6 +11,7 @@ import SelectedProjects from './components/SelectedProjects.jsx'
 import Skills from './components/Skills.jsx'
 import { projects } from './data/projects.js'
 import { scrollToSectionAccent } from './utils/sectionNavigation.js'
+import { appPathname, sitePath } from './utils/sitePaths.js'
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -20,7 +21,7 @@ function App() {
       return 'light'
     }
   })
-  const pathname = window.location.pathname.replace(/\/+$/, '') || '/'
+  const pathname = appPathname()
   const project = projects.find((item) => pathname === `/projects/${item.slug}`)
   const isRoboticLegPreview = import.meta.env.DEV && pathname === '/__preview/robotic-leg'
   const isHomePage = pathname === '/'
@@ -77,7 +78,7 @@ function App() {
       <footer className="site-footer">
         <div className="site-footer__inner">
           <span>BIJOY BHASKAR LALL · MECHANICAL ENGINEERING</span>
-          <a href={isHomePage ? '#home' : '/#home'}>Back to top <span aria-hidden="true">↑</span></a>
+          <a href={isHomePage ? '#home' : `${sitePath('')}#home`}>Back to top <span aria-hidden="true">↑</span></a>
         </div>
       </footer>
     </>

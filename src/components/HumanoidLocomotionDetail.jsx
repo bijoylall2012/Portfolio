@@ -1,4 +1,6 @@
-const projectFigures = '/images/humanoid-locomotion/'
+import { sitePath } from '../utils/sitePaths.js'
+
+const projectFigures = 'images/humanoid-locomotion/'
 
 const dhRows = [
   ['1', 'θ₁', '−L₁', '0', 'π/2'],
@@ -101,9 +103,7 @@ function MatlabCodePanel({ lines, part }) {
 }
 
 function ProjectFigure({ src, alt, caption, loading = 'lazy', className = '' }) {
-  const imageSrc = src.startsWith('/images/')
-    ? `${import.meta.env.BASE_URL}${src.slice(1)}`
-    : src.startsWith('/') ? src : `${projectFigures}${src}`
+  const imageSrc = sitePath(src.startsWith('/') ? src : `${projectFigures}${src}`)
   return (
     <figure className={`humanoid-detail__figure${className ? ` ${className}` : ''}`}>
       <img src={imageSrc} alt={alt} loading={loading} decoding="async" />
@@ -188,7 +188,7 @@ function HumanoidLocomotionDetail() {
           />
           <figure className="humanoid-detail__figure humanoid-detail__axes-figure">
             <div className="humanoid-detail__axes-frame">
-              <img src="/images/Axes.png" alt="Schematic of one humanoid leg showing the hip, knee, ankle, and foot end effector." loading="eager" decoding="async" />
+              <img src={sitePath('images/Axes.png')} alt="Schematic of one humanoid leg showing the hip, knee, ankle, and foot end effector." loading="eager" decoding="async" />
             </div>
             <figcaption>Link and Joint Model</figcaption>
           </figure>
@@ -220,7 +220,7 @@ function HumanoidLocomotionDetail() {
         <div className="humanoid-detail__figure-grid humanoid-detail__kinematic-figures">
           <figure className="humanoid-detail__figure humanoid-detail__kinematic-figure">
             <div className="humanoid-detail__kinematic-visual humanoid-detail__coordinate-visual">
-              <img src="/images/frames.png" alt="Coordinate-frame assignment for the six-link humanoid leg mechanism." loading="lazy" decoding="async" />
+              <img src={sitePath('images/frames.png')} alt="Coordinate-frame assignment for the six-link humanoid leg mechanism." loading="lazy" decoding="async" />
             </div>
             <figcaption>Coordinate-frame assignment for the six-link humanoid leg mechanism</figcaption>
           </figure>
@@ -286,13 +286,13 @@ function HumanoidLocomotionDetail() {
         <div className="humanoid-detail__multibody-poses">
           <figure className="humanoid-detail__figure humanoid-detail__multibody-pose">
             <div className="humanoid-detail__pose-crop humanoid-detail__pose-crop--left">
-              <img src={`${projectFigures}figure-10-adams-motion-poses.png`} alt="First MSC ADAMS configuration of the robotic leg during the constrained walking motion." loading="lazy" decoding="async" />
+              <img src={sitePath(`${projectFigures}figure-10-adams-motion-poses.png`)} alt="First MSC ADAMS configuration of the robotic leg during the constrained walking motion." loading="lazy" decoding="async" />
             </div>
             <figcaption>Side View</figcaption>
           </figure>
           <figure className="humanoid-detail__figure humanoid-detail__multibody-pose">
             <div className="humanoid-detail__pose-crop humanoid-detail__pose-crop--right">
-              <img src={`${projectFigures}figure-10-adams-motion-poses.png`} alt="Second MSC ADAMS configuration of the robotic leg during the constrained walking motion." loading="lazy" decoding="async" />
+              <img src={sitePath(`${projectFigures}figure-10-adams-motion-poses.png`)} alt="Second MSC ADAMS configuration of the robotic leg during the constrained walking motion." loading="lazy" decoding="async" />
             </div>
             <figcaption>Isometric View</figcaption>
           </figure>

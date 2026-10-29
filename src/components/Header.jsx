@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { getSectionAccentScrollPosition, scrollToSectionAccent } from '../utils/sectionNavigation.js'
+import { sitePath } from '../utils/sitePaths.js'
 
 const navigation = [
   { label: 'Home', href: '#home', id: 'home' },
@@ -111,7 +112,7 @@ function Header({ theme, onThemeToggle, isHomePage, isProjectPage }) {
       <div className="site-header__inner">
         <a
           className="wordmark"
-          href={isHomePage ? '#home' : '/'}
+          href={isHomePage ? '#home' : sitePath('')}
           aria-label="Bijoy Bhaskar Lall, home"
           onClick={(event) => {
             if (isProjectPage && isUnmodifiedPrimaryClick(event)) markHeroReturnAnimation()
@@ -121,7 +122,7 @@ function Header({ theme, onThemeToggle, isHomePage, isProjectPage }) {
           {navigation.map((item) => (
             <a
               key={item.label}
-              href={isHomePage ? item.href : item.id === 'home' ? '/' : `/${item.href}`}
+              href={isHomePage ? item.href : item.id === 'home' ? sitePath('') : `${sitePath('')}${item.href}`}
               aria-current={(isHomePage && activeSection === item.id) || (!isHomePage && item.id === 'projects') ? 'location' : undefined}
               onClick={(event) => {
                 setMenuOpen(false)

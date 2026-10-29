@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import BeamSimulation from './BeamSimulation.jsx'
 import { contact } from '../data/portfolio.js'
+import { sitePath } from '../utils/sitePaths.js'
 
 const heroReturnAnimationKey = 'portfolio:hero-return-animation'
 
@@ -69,7 +70,7 @@ function Hero() {
         <div className="hero__actions">
           <a className="button button--primary" href="#projects">View Projects</a>
           <a className="button button--outline" href="#contact">Get in touch</a>
-          <a className="button button--outline" href="/Resume1.pdf" target="_blank" rel="noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+          <a className="button button--outline" href={sitePath('Resume1.pdf')} target="_blank" rel="noreferrer">Résumé <span aria-hidden="true">↗</span></a>
         </div>
         <div className="hero__metadata">
           <a href={`mailto:${contact.email}`}>bijoylall2012@gmail.com <span aria-hidden="true">↗</span></a><span aria-hidden="true">·</span>

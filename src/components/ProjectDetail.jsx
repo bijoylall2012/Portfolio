@@ -2,6 +2,7 @@ import { projects } from '../data/projects.js'
 import HumanoidLocomotionDetail from './HumanoidLocomotionDetail.jsx'
 import EarOssiclesDetail from './EarOssiclesDetail.jsx'
 import LowTemperatureCombustionDetail from './LowTemperatureCombustionDetail.jsx'
+import { sitePath } from '../utils/sitePaths.js'
 
 function ProjectDetail({ project }) {
   const projectIndex = projects.findIndex((item) => item.slug === project.slug)
@@ -10,7 +11,7 @@ function ProjectDetail({ project }) {
 
   return (
     <article className="project-detail page-shell" aria-labelledby="project-detail-heading">
-      <a className="project-detail__back" href="/#projects">
+      <a className="project-detail__back" href={`${sitePath('')}#projects`}>
         <span aria-hidden="true">←</span> Back
       </a>
 
@@ -39,18 +40,18 @@ function ProjectDetail({ project }) {
 
       <nav className="project-detail__nav" aria-label="Project navigation">
         {previousProject ? (
-          <a className="button button--outline" href={`/projects/${previousProject.slug}`}>Previous Project</a>
+          <a className="button button--outline" href={sitePath(`projects/${previousProject.slug}`)}>Previous Project</a>
         ) : (
           <button className="button button--outline" type="button" disabled>Previous Project</button>
         )}
         {nextProject ? (
-          <a className="button button--outline" href={`/projects/${nextProject.slug}`}>Next Project</a>
+          <a className="button button--outline" href={sitePath(`projects/${nextProject.slug}`)}>Next Project</a>
         ) : (
           <button className="button button--outline" type="button" disabled>Next Project</button>
         )}
         <a
           className="button button--outline"
-          href="/"
+          href={sitePath('')}
           onClick={(event) => {
             if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
             try {

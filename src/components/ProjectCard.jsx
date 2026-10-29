@@ -1,8 +1,9 @@
 import TechnicalVisual from './TechnicalVisual.jsx'
+import { sitePath } from '../utils/sitePaths.js'
 
 function ProjectCard({ project }) {
   return (
-    <a className="project-card" href={`/projects/${project.slug}`} aria-label={`View project: ${project.title}`}>
+    <a className="project-card" href={sitePath(`projects/${project.slug}`)} aria-label={`View project: ${project.title}`}>
       <TechnicalVisual type={project.visual} />
       <div className="project-card__heading">
         <h3>{project.title}</h3>

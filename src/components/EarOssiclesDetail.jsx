@@ -1,16 +1,18 @@
+import { sitePath } from '../utils/sitePaths.js'
+
 const ossicleFigures = [
   {
-    src: '/images/figure1.png',
+    src: sitePath('images/figure1.png'),
     alt: 'Modal analysis figure for the stapes.',
     caption: 'Modal Analysis of Stapes',
   },
   {
-    src: '/images/figure2.png',
+    src: sitePath('images/figure2.png'),
     alt: 'Modal analysis figure for the malleus.',
     caption: 'Modal Analysis of Malleus',
   },
   {
-    src: '/images/figure3.png',
+    src: sitePath('images/figure3.png'),
     alt: 'Modal analysis figure for the incus.',
     caption: 'Modal Analysis of Incus',
   },

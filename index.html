@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F8F4ED" />
+    <meta name="description" content="Bijoy Bhaskar Lall — mechanical engineering, CAE, computational analysis, and academic projects." />
+    <title>Bijoy Bhaskar Lall — Mechanical Engineering Portfolio</title>
+    <script>
+      (() => {
+        try {
+          const theme = localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light'
+          document.documentElement.dataset.theme = theme
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#211C18' : '#F8F4ED')
+        } catch {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:wght@400..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

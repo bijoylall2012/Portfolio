@@ -53,18 +53,14 @@ function EngineVisual() {
   )
 }
 
-function ProductVisual({ titleId }) {
+function ProductVisual() {
   return (
-    <svg viewBox="0 0 620 510" role="img" aria-labelledby={titleId}>
-      <title id={titleId}>Illustrative placeholder product-design sketches, not project CAD</title>
-      <g className="visual-grid"><path d="M0 100H620M0 200H620M0 300H620M0 400H620"/><path d="M100 0V510M200 0V510M300 0V510M400 0V510M500 0V510"/></g>
-      <g className="product-sketch">
-        <path d="M153 352h117v-28h-24v-114c0-22 16-39 38-39h39c22 0 38 17 38 39v115h-25v27h120"/>
-        <path d="M153 352v22h117v-22m-9-142h-24m137 0h-24m-77 114h69"/>
-        <path d="M349 180v-47h82v47m-82 0h82m-71 0v103m60-103v103m-60 0h60m-72 0h84v18h-84z"/>
-      </g>
-      <g className="visual-label"><path d="M182 352v-52h-58"/><text x="62" y="292">CONCEPT A</text><path d="M419 280h84v44h44"/><text x="510" y="341">CONCEPT B</text><text x="208" y="423">FORM STUDIES · SCHEMATIC</text></g>
-    </svg>
+    <div className="technical-visual__image-pair technical-visual__image-pair--product">
+      <div className="technical-visual__hanger-image">
+        <img src={sitePath('Utility_Project/image6.png')} alt="CAD model of the cloth hanger mounted over a wooden door." loading="lazy" decoding="async" />
+      </div>
+      <img src={sitePath('Utility_Project/image7.png')} alt="CAD model of the circular-hole water aerator." loading="lazy" decoding="async" />
+    </div>
   )
 }
 
@@ -73,7 +69,7 @@ const visuals = { manipulator: ManipulatorVisual, locomotion: LocomotionVisual, 
 function TechnicalVisual({ type }) {
   const titleId = `visual-title-${type}-${useId()}`
   const Illustration = visuals[type]
-  return <div className={`technical-visual technical-visual--${type}`}><Illustration titleId={titleId} />{type !== 'locomotion' && type !== 'ear-ossicles' && type !== 'engine' && <span className="visual-placeholder">ILLUSTRATIVE PLACEHOLDER · NOT A PROJECT RESULT</span>}</div>
+  return <div className={`technical-visual technical-visual--${type}`}><Illustration titleId={titleId} />{type !== 'locomotion' && type !== 'ear-ossicles' && type !== 'engine' && type !== 'product' && <span className="visual-placeholder">ILLUSTRATIVE PLACEHOLDER · NOT A PROJECT RESULT</span>}</div>
 }
 
 export default TechnicalVisual

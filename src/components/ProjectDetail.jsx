@@ -2,6 +2,7 @@ import { projects } from '../data/projects.js'
 import HumanoidLocomotionDetail from './HumanoidLocomotionDetail.jsx'
 import EarOssiclesDetail from './EarOssiclesDetail.jsx'
 import LowTemperatureCombustionDetail from './LowTemperatureCombustionDetail.jsx'
+import CampusUtilityDesignDetail from './CampusUtilityDesignDetail.jsx'
 import { sitePath } from '../utils/sitePaths.js'
 
 function ProjectDetail({ project }) {
@@ -19,7 +20,7 @@ function ProjectDetail({ project }) {
         <h1 id="project-detail-heading">{project.title}</h1>
         <p>{project.slug === 'humanoid-locomotion'
           ? 'This project models a six-degree-of-freedom humanoid leg and examines how joint motion relates to foot position and orientation through kinematic analysis and multibody simulation.'
-          : project.description}</p>
+          : project.introduction ?? project.description}</p>
       </header>
 
       <hr className={`project-detail__separator${project.slug === 'humanoid-locomotion' ? ' project-detail__separator--humanoid-intro' : ''}`} />
@@ -30,6 +31,8 @@ function ProjectDetail({ project }) {
         <EarOssiclesDetail />
       ) : project.slug === 'low-temperature-combustion' ? (
         <LowTemperatureCombustionDetail />
+      ) : project.slug === 'campus-utility-design' ? (
+        <CampusUtilityDesignDetail />
       ) : (
         <section className="project-detail__content" aria-label={`${project.title} project details`}>
           <p>Project details will be added here.</p>

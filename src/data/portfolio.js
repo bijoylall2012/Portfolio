@@ -18,11 +18,11 @@ export const experiences = [
     organization: 'Mercedes-Benz Research and Development India (MBRDI)',
     location: 'Bengaluru, India',
     details: [
-      'Develop and improve physics-based AI models and digital twin workflows that combine engineering simulations with machine learning to model real-world system behaviour, optimize production workflows, and improve planning efficiency.',
-      'Perform automotive interior component simulations using ANSA and ABAQUS across 2+ vehicle carlines, 10+ load cases, and 30+ seat hardware tests to support design evaluation and development.',
-      'Developed Python-based ML and data analytics frameworks to predict occupant comfort from objective metrics, correlating occupant feedback and pressure, thus reducing reliance on physical testing and enabling data-driven comfort assessment.',
-      'Developed Python automation workflows that reduced analysis time from 30 days to 5 days and saved 2 days per project.',
-      'Co-inventor on 3 patents (patent pending) to prevent serious injuries in vehicle crash scenarios.',
+      'Developed factory-planning digital twins using NVIDIA Omniverse for 3 carlines and onboarded 1,000+ planners, generating an estimated 30% reduction in annual planner-hours through reduced reliance on physical factory trials.',
+      'Performed automotive interior component simulations using ANSA and ABAQUS across 10+ load cases and 30+ seat hardware tests to support design evaluation and development, seeing through 3 carlines to production kick-off.',
+      'Built a prediction model to quantify perceived occupant comfort from seat simulation and sensor data, saving an estimated 600 hours of simulation time and €30,000 annually due to reduced simulation and software license requirements.',
+      'Developed workflows to automate simulation model pre-processing, reducing validation time by 20% per carline project.',
+      'Inventor of 4 patents (patent pending) to prevent serious injuries in vehicle crash scenarios.',
     ],
   },
   {
@@ -31,8 +31,9 @@ export const experiences = [
     organization: 'Mercedes-Benz Research and Development India (MBRDI)',
     location: 'Bengaluru, India',
     details: [
-      'Initiated a study on the influence of seat design on comfort using data analytics; built and analysed a database of design parameters and comfort metrics using Python, ABAQUS, and machine learning techniques.',
-      'Developed an efficiency improvement process projected to save €70,000 annually and coordinated weekly managerial meetings for 80+ colleagues covering technical and leadership updates.',
+      'Conducted a data-driven study of seat design and occupant comfort using Python and ABAQUS, analysing 500+ historical simulation data points with XGBoost to develop a prediction model projected to save €70,000 annually in software costs.',
+      'Served as Master of Ceremonies of 2 company-level conferences, attended by 200+ delegates.',
+      'Coordinated weekly managerial meetings for 80+ colleagues covering technical and leadership updates.',
     ],
   },
   {
@@ -42,7 +43,7 @@ export const experiences = [
     location: 'Pilani, India',
     details: [
       'Taught classes of 200+ students on using AutoCAD software to solve kinematic analysis problems involving link-chain mechanisms; conducted doubt-solving sessions.',
-      'Assisted in creation of class test questions as well as in invigilation and paper correction.',
+      'Assisted in the creation of exam questions for 5+ test components as well as in invigilation and paper correction.',
     ],
   },
   {
@@ -51,8 +52,8 @@ export const experiences = [
     organization: 'Indira Gandhi Centre for Atomic Research (IGCAR)',
     location: 'Kalpakkam, India',
     details: [
-      'Developed a mathematical model of the robot manipulator arm at IGCAR using the Denavit-Hartenberg approach; analysed the kinematics of the manipulator arm using MSC ADAMS and AutoCAD.',
-      'Authored and presented a research report to a panel of distinguished scientists at IGCAR.',
+      'Developed a kinematic model of the robot manipulator arm at the facility using the Denavit-Hartenberg approach, MSC ADAMS and AutoCAD, with an estimated saving of over ₹1 lakh in potential prototype cost avoidance.',
+      'Presented the report to a panel of distinguished scientists at IGCAR, enabling its use in future simulation and control studies.',
     ],
   },
 ]
@@ -81,8 +82,8 @@ export const researchInterests = [
 ]
 
 export const skillGroups = [
-  { category: 'CAE and Simulation', skills: ['ABAQUS', 'ANSA', 'ANSYS', 'Hypermesh', 'MetaPost', 'MSC ADAMS', 'Isaac Sim/Lab', 'NVIDIA Omniverse'] },
-  { category: 'CAD and Design', skills: ['Siemens NX', 'Solidworks', 'AUtoCAD', 'Fusion 360'] },
+  { category: 'CAE and Simulation', skills: ['ABAQUS', 'ANSA', 'ANSYS', 'Hypermesh', 'MetaPost', 'MSC ADAMS', 'Isaac Sim/Lab', 'NVIDIA Omniverse', 'CalculiX', 'OpenFOAM', 'LS-DYNA'] },
+  { category: 'CAD and Design', skills: ['Siemens NX', 'Solidworks', 'AutoCAD', 'Fusion 360', 'FreeCAD'] },
   { category: 'Programming', skills: ['Python', 'C++', 'MATLAB'] },
   { category: 'Certifications', skills: ['AI Foundations: Machine Learning', 'Python for Data Science'] },
 ]

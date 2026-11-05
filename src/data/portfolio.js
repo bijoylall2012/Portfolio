@@ -23,6 +23,7 @@ export const experiences = [
       'Built a prediction model to quantify perceived occupant comfort from seat simulation and sensor data, saving an estimated 400 hours of simulation time and €30,000 annually due to reduced simulation and software license requirements.',
       'Developed workflows to automate simulation model pre-processing, reducing validation time by 20% per carline project.',
       'Inventor of 4 patents (patent pending) to prevent serious injuries in vehicle crash scenarios.',
+      'Served as Master of Ceremonies of 3 company-level conferences, attended by 200+ delegates.',
     ],
   },
   {
@@ -32,7 +33,6 @@ export const experiences = [
     location: 'Bengaluru, India',
     details: [
       'Conducted a data-driven study of seat design and occupant comfort using Python and ABAQUS, analysing 500+ historical simulation data points with XGBoost to develop a prediction model projected to save €70,000 annually in software costs.',
-      'Served as Master of Ceremonies of 3 company-level conferences, attended by 200+ delegates.',
       'Coordinated weekly managerial meetings for 80+ colleagues covering technical and leadership updates.',
     ],
   },

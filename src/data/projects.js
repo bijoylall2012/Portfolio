@@ -7,6 +7,14 @@ export const projects = [
     visual: 'locomotion',
   },
   {
+    slug: 'campus-utility-design',
+    title: 'Sustainable Campus Utility Solutions',
+    category: 'PRODUCT DESIGN',
+    description: 'Developed and evaluated sustainable, 3D-printable replacements for damaged campus bathroom utilities, combining mechanical design, structural and fluid-flow analysis, and cost-benefit evaluation.',
+    introduction: 'An engineering design project addressing two recurring campus maintenance problems: broken bathroom hangers and damaged water aerators. The project explores alternative geometries, materials, structural performance, fluid-flow characteristics, manufacturing costs, and environmental benefits to develop practical replacement solutions.',
+    visual: 'product',
+  },
+  {
     slug: 'middle-ear-ossicles',
     title: 'Vibrational Analysis of Middle-Ear Ossicles',
     category: 'BIOMECHANICS',
@@ -19,13 +27,5 @@ export const projects = [
     category: 'POWERTRAIN',
     description: 'Developed a MATLAB two-zone combustion model combining cylinder geometry, combustion progression, thermodynamic properties, and heat transfer to evaluate in-cylinder behavior and examine exergy, exhaust gas recirculation, and temperature variation.',
     visual: 'engine',
-  },
-  {
-    slug: 'campus-utility-design',
-    title: 'Sustainable Campus Utility Solutions',
-    category: 'PRODUCT DESIGN',
-    description: 'Developed and evaluated sustainable, 3D-printable replacements for damaged campus bathroom utilities, combining mechanical design, structural and fluid-flow analysis, and cost-benefit evaluation.',
-    introduction: 'An engineering design project addressing two recurring campus maintenance problems: broken bathroom hangers and damaged water aerators. The project explores alternative geometries, materials, structural performance, fluid-flow characteristics, manufacturing costs, and environmental benefits to develop practical replacement solutions.',
-    visual: 'product',
   },
 ]

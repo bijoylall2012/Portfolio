@@ -4,6 +4,7 @@ import Contact from './components/Contact.jsx'
 import Experience from './components/Experience.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
+import Patents from './components/Patents.jsx'
 import ProjectDetail from './components/ProjectDetail.jsx'
 import Research from './components/Research.jsx'
 import RoboticLegPreview from './components/RoboticLegPreview.jsx'
@@ -68,6 +69,7 @@ function App() {
             <Hero />
             <About />
             <Skills />
+            <Patents />
             <SelectedProjects />
             <Experience />
             <Research />

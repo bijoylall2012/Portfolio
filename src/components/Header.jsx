@@ -20,10 +20,10 @@ const themeToggleIcons = {
 
 const navigation = [
   { label: 'Home', href: '#home', id: 'home' },
+  { label: 'Patents', href: '#patent', id: 'patent' },
   { label: 'Projects', href: '#projects', id: 'projects' },
   { label: 'Experience', href: '#experience', id: 'experience' },
   { label: 'Research', href: '#research', id: 'research' },
-  { label: 'Patents', href: '#patent', id: 'patent' },
   { label: 'Childhood Creations', href: '#childhood-creations', id: 'childhood-creations' },
   { label: 'Contact', href: '#contact', id: 'contact' },
 ]

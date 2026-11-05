@@ -53,11 +53,9 @@ const aeratorDimensions = [
   ['Overall length', '30 mm'],
   ['Housing wall thickness', '1.5 mm'],
   ['Internal screen thickness', '1 mm'],
-  ['Circular hole diameter', '1.2 mm'],
-  ['Clear spacing between holes', '1.2 mm'],
-  ['Triangular hole pitch', '2.4 mm'],
-  ['Hole arrangement', 'Staggered triangular'],
-  ['Manufacturing intent', '3D printing'],
+  ['Circular hole diameter', '1.152 mm'],
+  ['Hole arrangement', '5 concentric rings + center'],
+  ['Manufacturing method', '3D printing'],
 ]
 
 const hangerDesigns = [
